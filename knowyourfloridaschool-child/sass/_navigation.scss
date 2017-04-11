@@ -1,0 +1,362 @@
+body {
+    #logo,
+    #mobile-logo,
+    #logo-modal {
+        svg { 
+            .cls-1{fill:#098593;}
+            .cls-2{fill:#64c9d3;}
+            .cls-3{fill:#018e9e;}
+            .cls-4{fill:#08727e;}
+            .cls-5{fill:#00a7b9;}
+            .cls-6{fill:#676767;}
+            .cls-7{fill:#d44336;}
+            .cls-8{fill:#9f3023;}
+            .cls-9{fill:#f15940;}
+            .cls-10{fill:#fff;}
+            .cls-11{fill:#1ab689;}
+            .cls-12{fill:#f5ae27;}
+        }
+    }
+    #logo,
+    #logo-modal {
+        svg {
+            margin-left: -7px;
+            margin-top: -7px;
+            height: 62px !important;
+        }
+    }
+    #close-modal {
+        .close-container {
+            svg {
+                path,
+                polygon {
+                    fill: $purple;
+                }
+            }
+        }
+    }
+    .header-wrap {
+        border: 0px !important;
+    }
+    header {
+        border: 0px !important;
+        .view-my-schools-link {
+          position: relative;
+          margin-left: 15px;
+          padding-left: 15px;
+          &:not(.open-compare-dropdown) #compare-header-wrap {
+            opacity: 0;
+            display: none;
+            visibility: hidden;
+          }
+          &.open-compare-dropdown #compare-header-wrap {
+            opacity: 1;
+            display: block;
+            visibility: visible;
+          }
+          > a {
+              .menu-item-text {
+                display: block;
+                height: 81px;
+                vertical-align: top;
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+              }
+                .compare-count {
+                    display: inline;
+                }
+                .compare-icon-arrow {
+                    position: relative;
+                    margin: 0px 0px 0px 5px;
+                    padding: 0px;
+                    vertical-align: middle !important;
+                    display: inline-block;
+                    height: 16px;
+                    width: 16px;
+                    line-height: 82px;
+                    svg {
+                        margin-top: 4px;
+                        vertical-align: top;
+                        path,
+                        polygon {
+                            fill: $violet;
+                            @extend %transition;
+                        }
+                    }
+                    img {
+                        margin-top: 4px;
+                        vertical-align: top;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+              &:before {
+                content: " ";
+                width: 1px;
+                height: 50px;
+                background-color: #e6e6e5;
+                position: absolute;
+                top: 17px;
+                left: 0px;
+              }
+              &:hover,
+              &:active,
+              &:focus {
+                svg {
+                    path,
+                    polygon {
+                        fill: $purpleDark !important;
+                    }
+                }
+              }
+          }
+        }
+        #compare-header-wrap {
+            position: absolute;
+            top: 75px;
+            right: 0px;
+            width: 330px;
+            background-color: #f3f3f4;
+
+            .compare-inner {
+                #school-comparisons {
+                    .compare-school-link {
+                        display: block;
+                        width: 100%;
+                        -webkit-border-radius: 0px;
+                        -moz-border-radius: 0px;
+                        border-radius: 0px;
+                    }
+                }
+            }
+            #school-comparisons {
+              .compare-icon-close {
+                background-color: transparent;
+                height: 58px;
+                width: 58px;
+                padding: 21px;
+                svg {
+                    height: 15px;
+                    width: 15px;
+                    path,
+                    polygon {
+                        fill: $violet;
+                        @extend %transition;
+                    }
+                }
+              }
+              .compare-school-link {
+                font-family: 'Roboto Slab',serif !important;
+                font-weight: 400;
+                font-stretch:normal;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+                text-rendering: optimizeLegibility !important;
+                -webkit-font-smoothing: antialiased !important;
+                color: $violet !important;
+                font-size: 14px;
+                letter-spacing: 0px;
+                margin: 0px;
+                text-align: left;
+                padding: 0 60px;
+                line-height: 58px;
+                height: 58px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                &:not(:first-child) {
+                    border-top: 1px solid #E6E6E5;
+                }
+                .icon-search-school-name {
+                  position: absolute;
+                  top: 6px;
+                  left: 20px;
+                  height: 25px;
+                  width: 25px;
+                  svg {
+                    path,
+                    polygon {
+                      fill: $purple;
+                      @extend %transition;
+                    }
+                  }
+                }
+                &:hover,
+                &:focus {
+                    background-color: $violet !important;
+                    color: white !important;
+                    path,
+                    polygon {
+                        fill: white !important;
+                    }
+                    .icon-search-school-name {
+                        svg {
+                          path,
+                          polygon {
+                            fill: white !important;
+                          }
+                        }
+                    }
+                }
+                &:active {
+                    background-color: $purpleDark !important;
+                    color: white !important;
+                    path,
+                    polygon {
+                        fill: white !important;
+                    }
+                    .icon-search-school-name {
+                        svg {
+                          path,
+                          polygon {
+                            fill: white !important;
+                          }
+                        }
+                    }
+                }
+              }
+              .compare-link {
+                font-family: 'Roboto',serif !important;
+                font-weight: 900;
+                font-stretch:normal;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+                text-rendering: optimizeLegibility !important;
+                -webkit-font-smoothing: antialiased !important;
+                color: white;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                background-color: $purple;
+                padding: 0px;
+                margin: 0px;
+                display: block;
+                width: 100%;
+                line-height: 58px;
+                height: 58px;
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: $purpleDark !important;
+                }
+              }
+              > * {
+                font-size: 12px;
+                display: inline-block;
+                height: 22px;
+                line-height: 22px;
+                margin-right: 12px;
+                margin-bottom: 12px;
+                vertical-align: top;
+                position: relative;
+              }
+            }
+        }
+    }
+}
+
+body.remove-styles {
+
+}
+
+body:not(.remove-styles)  {
+    .header-right,
+    .float-menu {
+        ul.social-icons {
+            li {
+                a {
+                    &:hover {
+                        background: none;
+                        color: $violet !important;
+                    }
+                }
+                &:not(.has-svg) {
+                    a {
+                        color: $violet;
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            
+                        }
+                    }
+                }
+                &.has-svg {
+                    a {
+                        width: 36px;
+                        height: 36px;
+                        padding: 10px;
+                        background: transparent !important;
+                        @extend %transition;
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                            vertical-align: top;
+                            .cls-1{fill:#937eb5;}
+                        }
+                        img {
+                            vertical-align: top;
+                            width: 100%;
+                            height: auto;
+                        }
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            svg {
+                                .cls-1{fill:$purpleDark;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        nav#main-navigation {               
+            ul {
+                li {
+                    a {
+                        font-family: 'Roboto',serif !important;
+                        font-weight: 900;
+                        font-stretch:normal;
+                        text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+                        text-rendering: optimizeLegibility !important;
+                        -webkit-font-smoothing: antialiased !important;
+                        color: $violet;
+                        font-size: 14px;
+                        letter-spacing: 0.125em;
+                        text-transform: uppercase;
+                        background: none;
+                        span {
+                            border-bottom: 2px solid transparent;
+                            padding-bottom: 2px;
+                        }
+                        &:hover,
+                        &:focus,
+                        &:active, {
+                            color: $purpleDark;
+                        }
+                    }
+                }
+                li.current-menu-item {
+                    a {
+                        span {
+                            border-bottom: 2px solid $violet;
+                            padding-bottom: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #mobile-header,
+    .header-wrap {
+        a.mobile-menu-link span.menu-bars, 
+        a.mobile-menu-link span.menu-bars:before, 
+        a.mobile-menu-link span.menu-bars:after,
+        a.overlay-menu-link span.menu-bars, 
+        a.overlay-menu-link span.menu-bars:before, 
+        a.overlay-menu-link span.menu-bars:after {
+            background-color: $purple !important;
+        }
+    }
+    &.mobile-menu-open #mobile-header a.mobile-menu-link span.menu-bars,
+    &.mobile-menu-open .header-wrap a.overlay-menu-link span.menu-bars {
+        background-color: transparent !important;
+    }
+}

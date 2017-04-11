@@ -1,0 +1,109 @@
+body,
+html {
+	background-color: white !important;
+  	.container {
+    	overflow: visible !important;
+  	}
+  	.inner-page-wrap {
+  		margin-top: 0px !important;
+  		margin-bottom: 0px !important;
+ 	 }
+  	.fw-row .spb-row-thin-width.col-sm-12 > .spb_content_element {
+  		max-width: 820px;
+  	}
+  	.spb_content_element {
+	  	.row,
+	  	.col-* {
+	  		overflow: visible !important;
+	  	}
+  	}
+  	section.row.fw-row {
+	  	position: relative;
+	  	&.searchbar-row {
+	  		z-index: 100;
+	  	}
+  	}
+  	.spb-row-container.spb_parallax_asset {
+  		box-shadow: none;
+  	}
+  	.post-41.page {
+  		padding: 0 15px;
+  	}
+  	@media(min-width: 991px) {
+	  	#main-container {
+	  		padding-top: 82px;
+	  	}
+	}
+}
+
+body #site-loading {
+	visibility: hidden !important;
+}
+
+body.remove-styles {
+  
+}
+
+body:not(.remove-styles)  {
+	.page-heading {
+		background-color: $violet;
+		background-image: url(../images/heading-banner.png);
+		background-position: center;
+		background-size: cover;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		position: relative;
+		&:not(.has-banner-image) {
+			&:before {
+				content: " ";
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background-color: rgba(147, 126, 181, 0.6);
+			}
+		}
+		.entry-title {
+			font-family: 'Roboto Slab',serif !important;
+  			font-weight: 700;
+  			font-stretch:normal;
+  			text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  			text-rendering: optimizeLegibility !important;
+  			-webkit-font-smoothing: antialiased !important;
+			font-size: 38px;
+			line-height: 1.2;
+			padding: 0px;
+			margin: 0px;
+			color: white;
+			text-align: center;
+		}
+	}
+	.white-text {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		a,
+		blockquote,
+		li {
+			color: white !important;
+		}
+		.sf-button {
+			background-color: white !important;
+			&.green {
+				color: $green !important;
+			}
+			&.purple {
+				color: $violet !important;
+			}
+			&.aqua {
+				color: #64C9D3 !important;
+			}
+		}
+	}
+}

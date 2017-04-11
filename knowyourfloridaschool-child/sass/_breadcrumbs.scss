@@ -1,0 +1,43 @@
+
+body:not(.remove-styles) {
+	#breadcrumbs {
+		font-family: 'Roboto',serif !important;
+  		font-weight: 900;
+  		font-stretch:normal;
+  		text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+ 	 	text-rendering: optimizeLegibility !important;
+  		-webkit-font-smoothing: antialiased !important;
+		font-size: 14px;
+		color: white;
+		margin-top: 60px;
+		height: 25px;
+		letter-spacing: 1.25px;
+		text-transform: uppercase;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		max-width: 50%;
+		color: $purple;
+		i {
+			font-size: 20px;
+			margin: 0px;
+		    padding: 10px 0 0 0;
+		    line-height: 0;
+		    display: inline-block;
+		    height: 16px;
+		    width: 23px;
+		    vertical-align: top;
+		}
+		a {
+			color: $purple;
+			&:hover,
+			&:active,
+			&:focus {
+				color: $purpleDark;
+			}
+		}
+		> span {
+			margin: 0 5px;
+		}
+	}
+}

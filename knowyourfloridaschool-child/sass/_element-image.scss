@@ -1,0 +1,19 @@
+body:not(.remove-styles) {
+	.spb_image {
+		margin: 0px;
+		figure {
+			img {
+				-webkit-transform: scale(1) !important;
+			    -moz-transform: scale(1) !important;
+			    -ms-transform: scale(1) !important;
+			    -o-transform: scale(1) !important;
+			    transform: scale(1) !important;
+			}
+			figcaption {
+				display: none;
+				visibility: hidden;
+				opacity: 0;
+			}
+		}
+	}
+}

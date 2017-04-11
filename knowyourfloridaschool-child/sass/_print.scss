@@ -1,0 +1,414 @@
+@media screen {
+	.hide-screen {
+		display: none !important;
+		opacity: 0 !important;
+		visibility: hidden !important;
+	}
+}
+
+/* bootstrap offset */
+@media print {
+	* {
+	    text-shadow: none !important;
+	    color: #606161 !important;
+	    background: auto !important;
+	    box-shadow: none !important;
+	}
+}
+
+@media print {
+	.header-wrap {
+		border: 0px !important;
+	}
+	#container,
+	body,
+	html {
+		background-color: white !important;
+	}
+	#main-navigation,
+	.ad,
+	#language-toggle,
+	#breadcrumbs,
+	#footer-menu,
+	#footer,
+	.ad,
+	#school-reportcard-toggle,
+	.add-school-compare-link,
+	.view-grade-history,
+	a[title="How is this grade calculated?"],
+	.icon-component,
+	.spb_button_element,
+	#signup,
+	#FDE-link {
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+	}
+	#header {
+		position: static !important;
+		text-align: center !important;
+		float: none !important;
+		width: 100% !important;
+		display: block !important;
+		#logo {
+			width: 100%;
+			text-align: center;
+			float: none;
+			position: static;
+			height: auto;
+			.logo-svg-container {
+				margin-left: auto;
+				margin-right: auto;
+				height: 100px;
+				svg {
+					margin: 0 auto;
+				}
+			}
+		}
+		.header-right {
+			display: none;
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+	body.page-id-42 .row {
+		.col-sm-6 {
+			width: 50% !important;
+			float: left !important;
+		}
+		.col-sm-4 {
+			width: 33.3% !important;
+			float: left !important;
+		}
+		.col-sm-8 {
+			width: 66.6% !important;
+			float: left !important;
+		}
+	}
+
+	body.page-id-42 #school-reportcard-school-grade-data {
+		.school-grade-column,
+		.parent-empowerment-column {
+			margin: 20px auto !important;
+			float: none !important;
+			text-align: center !important;
+		}
+	}
+	#main-container .page-heading .heading-text{
+		padding-bottom: 0 !important;
+	}
+
+	.page-heading:after {
+		display: none !important;
+	}
+
+	.page-heading .triangle-background {
+		background-color: transparent !important;
+
+		&:after {
+			background: none !important;
+		}
+	}
+
+	ul, img {
+		page-break-inside: avoid;
+	}
+	@page {
+
+   	}
+   	@page {
+	  size: A4;
+	}
+
+	.heading-text {
+		ul {
+			display: none !important;
+			display: none !important;
+			visibility: hidden !important;
+			opacity: 0 !important;
+		}
+	}
+
+	body.page-id-42:not(.remove-styles) #school-reportcard-school-grade-data .school-grade-column .spb-asset-content .grade-scale.grade-A .a-grade, 
+	body.page-id-42:not(.remove-styles) #school-reportcard-school-grade-data .school-grade-column .spb-asset-content .grade-scale.grade-B .b-grade, 
+	body.page-id-42:not(.remove-styles) #school-reportcard-school-grade-data .school-grade-column .spb-asset-content .grade-scale.grade-C .c-grade, 
+	body.page-id-42:not(.remove-styles) #school-reportcard-school-grade-data .school-grade-column .spb-asset-content .grade-scale.grade-D .d-grade, 
+	body.page-id-42:not(.remove-styles) #school-reportcard-school-grade-data .school-grade-column .spb-asset-content .grade-scale.grade-F .f-grade {
+	    background-color: #00A5B8 !important;
+    	color: white !important;
+	}
+
+	body.page-id-42 #school-reportcard-school-grade-data .parent-empowerment-column {
+		width: 80% !important;
+	}
+
+	body.page-id-42:not(.remove-styles) .grading-scale-components-wrap,
+	body #exhibit-grading-scale .grading-scale-wrapper {
+		margin-top: 40px !important;
+	}
+
+	body.page-id-42:not(.remove-styles) .row.fw-row#school-reportcard-student-characteristics-data {
+		page-break-before: always !important;
+		margin-top: 40px !important;
+	}
+
+	body.page-id-42 .spb_content_element.about-school-enrollment-race,
+	body.page-id-42 .spb_content_element.about-school-enrollment-english-learners {
+		padding-top: 20px !important;
+	}
+
+	#container #main-container .page-heading{
+		background-color: white !important;
+
+		&:after {
+			background-color: white !important;
+		}
+	}
+
+	#main-container .page-heading .heading-text {
+		padding-bottom: 0;
+	}
+
+	.spb_blog_widget,
+	section.article-extras,
+	aside.sidebar,
+	#table-of-contents,
+	.social-sharing-wrap,
+	.content-card-feed,
+	.family-health-row,
+	.home-featured-post,
+	.content-wrap .featured-image {
+		display: none !important;
+		display: none !important;
+		visibility: hidden !important;
+		opacity: 0 !important;
+	}
+
+	#school-reportcard-school-grade-data,
+	#school-reportcard-performance-details-description,
+	#school-reportcard-performance-details-data,
+	#school-reportcard-student-characteristics-data,
+	.pe-statement {
+		display: block !important;
+		visibility: visible !important;
+		margin: 0;
+	}
+
+	#copyright a {
+		color: #606161 !important;
+	}
+
+	body #exhibit-grading-scale .grading-scale-wrapper .scale-background span {
+		border-bottom: 1px solid #606161 !important;
+		border-top: 1px solid #606161 !important;
+	}
+
+	body #exhibit-grading-scale .grading-scale-wrapper .grading-scale-fill {
+		background-color: #6183b3 !important;
+	}
+
+	body:not(.remove-styles) #footer-wrap #copyright .text-left a {
+		color: #606161 !important;
+
+		&:hover {
+			color: #606161 !important;
+		}
+	}
+
+	body.page-id-42:not(.remove-styles) #school-reportcard-overview .spb-row-container .school-name {
+		margin-top: 40px;
+	}
+
+	body.page-id-42:not(.remove-styles) .row.fw-row#school-reportcard-school-grade-data, 
+	body.page-id-42:not(.remove-styles) .row.fw-row#school-reportcard-performance-details-data, 
+	body.page-id-42:not(.remove-styles) .row.fw-row#school-reportcard-student-characteristics-data {
+		padding-bottom: 0;
+	}
+
+	body.page-id-42 .highcharts-container {
+		text-align: center !important;
+	}
+
+	body #school-reportcard-overview {
+		background-color: white !important;
+	}
+
+	body.pagie-id-42:not(.remove-styles) .grading-scale-wrapper {
+		margin: 40px auto !important;
+	}
+
+	body.page-id-42:not(.remove-styles) #school-reportcard-overview {
+		.spb-row-container {
+		    @media(max-width: 991px) {
+			    &:before {
+			    	background-color: white !important; 
+			    }
+			}
+		}
+	}
+
+	body.page-id-42 {
+		.school-grade-component-reportcard {
+			margin: 0 !important;
+		}
+
+		.highchart {
+			margin-bottom: 0 !important;
+			margin-top: 10px !important;
+		}
+
+/*		.spb_content_element,
+		.spb-asset-content,
+		section.row {
+			page-break-before: avoid !important;
+			page-break-after: avoid !important;
+		}*/
+
+		.reportcard-title,
+		.school-name,
+		.data-toggle-container {
+			margin: 0 !important;
+		}
+
+		.data-toggle-subgroup {
+			border: none !important;
+			text-align: center;
+			margin-top: 0;
+		}
+
+		.icon-select {
+			display: none;
+			border: none;
+		}
+	}
+
+	body.page-id-42 p,
+	body.page-id-42 .pe-component,
+	body.page-id-42 .component-value,
+	body.page-id-42:not(.remove-styles) .data-toggle-container .data-toggle, 
+	body.page-id-42:not(.remove-styles) .data-toggle-container .data-toggle-subgroup {
+		font-size: 12px !important;
+	}
+
+	body.page-id-42 h2 {
+		font-size: 20px !important;
+	}
+
+	body.page-id-42 h3 {
+		font-size: 16px !important;
+	}
+
+	body.page-id-42:not(.remove-styles) #school-reportcard-overview .spb-row-container .card .stat {
+	    display: inline-block;
+	    margin: 0 60px 30px 60px;
+	}
+
+	body.page-id-42 .school-grade-component-reportcard {
+		page-break-before: always !important;
+	}
+	
+	/*.points-calc .component-title {
+		display: none;
+	}*/
+
+	body:not(.remove-styles) .spb_calc_examples .school-calc .points-calc .dot-border-bottom, 
+	body:not(.remove-styles) .spb_calc_examples .school-grade-component-grading-scale .points-calc .dot-border-bottom, 
+	body:not(.remove-styles) .school-grade-component-reportcard .school-calc .points-calc .dot-border-bottom, 
+	body:not(.remove-styles) .school-grade-component-reportcard .school-grade-component-grading-scale .points-calc .dot-border-bottom, 
+	body:not(.remove-styles) .school-grade-component-grading-scale .school-calc .points-calc .dot-border-bottom, 
+	body:not(.remove-styles) .school-grade-component-grading-scale .school-grade-component-grading-scale .points-calc .dot-border-bottom {
+		margin: 0;
+	}
+
+	body:not(.remove-styles) .spb_calc_examples .school-calc .points-calc .component .pe-statement p, 
+	body:not(.remove-styles) .spb_calc_examples .school-grade-component-grading-scale .points-calc .component .pe-statement p, 
+	body:not(.remove-styles) .school-grade-component-reportcard .school-calc .points-calc .component .pe-statement p, 
+	body:not(.remove-styles) .school-grade-component-reportcard .school-grade-component-grading-scale .points-calc .component .pe-statement p, 
+	body:not(.remove-styles) .school-grade-component-grading-scale .school-calc .points-calc .component .pe-statement p, 
+	body:not(.remove-styles) .school-grade-component-grading-scale .school-grade-component-grading-scale .points-calc .component .pe-statement p,
+	body:not(.remove-styles) .school-grade-component-reportcard .school-calc .points-calc .solid-border-bottom {
+		margin: 0;
+	}
+
+	body:not(.remove-styles) .school-grade-component-reportcard .school-calc .points-calc {
+		padding-bottom: 10px !important;
+		padding-top: 10px !important;
+	}
+
+	body:not(.remove-styles) .spb_calc_examples .school-calc .points-calc .component:last-child, 
+	body:not(.remove-styles) .spb_calc_examples .school-grade-component-grading-scale .points-calc .component:last-child, 
+	body:not(.remove-styles) .school-grade-component-reportcard .school-calc .points-calc .component:last-child, 
+	body:not(.remove-styles) .school-grade-component-reportcard .school-grade-component-grading-scale .points-calc .component:last-child, 
+	body:not(.remove-styles) .school-grade-component-grading-scale .school-calc .points-calc .component:last-child, 
+	body:not(.remove-styles) .school-grade-component-grading-scale .school-grade-component-grading-scale .points-calc .component:last-child,
+	body.page-id-42 #ela-learning-gains-wrapper,
+	.component {
+		margin-bottom: 0;
+		border: none !important;
+	}
+
+	body:not(.remove-styles) .spb_calc_examples .school-calc .points-calc .component .pe-component.component-open svg, 
+	body:not(.remove-styles) .spb_calc_examples .school-grade-component-grading-scale .points-calc .component .pe-component.component-open svg, 
+	body:not(.remove-styles) .school-grade-component-reportcard .school-calc .points-calc .component .pe-component.component-open svg, 
+	body:not(.remove-styles) .school-grade-component-reportcard .school-grade-component-grading-scale .points-calc .component .pe-component.component-open svg, 
+	body:not(.remove-styles) .school-grade-component-grading-scale .school-calc .points-calc .component .pe-component.component-open svg, 
+	body:not(.remove-styles) .school-grade-component-grading-scale .school-grade-component-grading-scale .points-calc .component .pe-component.component-open svg {
+	    -ms-transform: rotate(0deg);
+    	-webkit-transform: rotate(0deg);
+    	transform: rotate(0deg);
+	}
+
+	body:not(.remove-styles) .school-grade-component-reportcard .school-calc .points-calc .component-title {
+		padding-top: 10px;
+		margin-left: -13px;
+		font-size: 15px !important;
+	}
+
+
+	body.page-id-42 {
+		p {
+			margin-bottom: 5px !important;
+		}
+		.view-table-wrap {
+			display: none !important;
+			margin: 0;
+			padding: 0;
+		}
+
+		.blank_spacer {
+			height: 0 !important;
+		}
+	}
+
+	body.page-id-42 .page {
+
+		.student-performance-spar-ela-aggregate,
+		.student-performance-spar-ela-subgroup,
+		.student-performance-spar-math-aggregate,
+		.student-performance-spar-math-subgroup,
+		.student-performance-spar-science-aggregate,
+		.student-performance-spar-science-subgroup {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+
+		section#school-reportcard-performance-details-description {
+			page-break-before: always !important;
+		}
+	}
+
+	body.page-id-42 .parent-empowerment-column p {
+		font-size: 20px !important;
+	}
+
+	body.page-id-42 .about-school-enrollment-homeless {
+		margin-top: 40px;
+		page-break-before: always !important;
+	}
+}
+@media print and (color) {
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+}

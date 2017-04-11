@@ -1,0 +1,412 @@
+
+body {
+	#container #mobile-header {
+
+		#mobile-logo {
+			float: none;
+			.logo-svg-container {
+				svg {
+					margin-left: -7px;
+					margin-top: -7px;
+					height: 54px;
+					.cls-1{fill:#ff9323;}.cls-2{fill:#b7b7b7;}.cls-3{fill:#0098ff;}
+				}
+			}
+			img {
+				height: 40px;
+				width: auto;
+			}
+		}
+
+		.social-icons {
+			display: inline-block;
+			overflow: hidden;
+			height: 50px;
+			float: right;
+			vertical-align: top;
+			margin: -18px 20px -18px -2px;
+			top: 0px;
+			line-height: 0;
+			position: relative;
+			font-size: 0;
+			@media(max-width: 450px) {
+				display: none;
+				visibility: hidden;
+				opacity: 0;
+			}
+
+			li {
+				margin: 7px 3px;
+				a {
+					-webkit-border-radius: 4px;
+					-moz-border-radius: 4px;
+					border-radius: 4px;
+					border: 1px solid #E6E6E6;
+					padding: 9px 8px;
+					font-size: 18px;
+
+					@extend %transition;
+
+					&:hover,
+					&:focus {
+						background-color: white;
+
+					}
+				}
+			}
+		}
+	}
+	&.mobile-menu-open #mobile-header a.mobile-menu-link span.menu-bars {
+	    background-color: transparent !important;
+	}
+
+	#mobile-menu-wrap {
+		padding: 0px !important;
+		background-color: $teal !important;
+		-webkit-box-shadow: inset 8px 0px 5px 0px rgba(0,0,0,0.1);
+		-moz-box-shadow: inset 8px 0px 5px 0px rgba(0,0,0,0.1);
+		box-shadow: inset 8px 0px 5px 0px rgba(0,0,0,0.1);
+
+		.mobile-menu-inner {
+			padding-bottom: 0px !important;
+		}
+
+		.menu-main-menu-container {
+			padding-top: 40px;
+			.logo-mobile-menu {
+				width: 100%;
+				height: auto;
+				margin-top: 20px;
+				padding-left: 20px;
+				margin-bottom: 15px;
+				max-width: 225px;
+				height: 40px;
+				a {
+					display: block;
+				}
+				svg {
+					max-width: 225px;
+					height: 40px;
+					.cls-1{fill:#ff9323;}.cls-2{fill:#b7b7b7;}.cls-3{fill:#0098ff;}
+				}
+			}
+
+			ul.menu {
+				border-top: 1px solid $tealDark !important;
+
+				a,
+				a:hover,
+				a:active,
+				a:focus {
+					color: white !important;
+					.menu-item-text:after {
+						@extend %transition;
+					}
+				}
+
+				> li {
+					border-top: 0px !important;
+					&:not(.sub-menu-active) {
+			  			border-bottom: 1px solid $tealDark !important;
+						> a .menu-item-text:after {
+						    margin-top: -2px;
+						    margin-right: 0px;
+						}
+			  		}
+					&.sub-menu-active {
+						> a .menu-item-text:after {
+							-ms-transform: rotate(-90deg); /* IE 9 */
+						    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+						    transform: rotate(-90deg);
+						    margin-top: -5px;
+						    margin-right: -5px;
+						}
+			  		}
+					a {
+		                font-family: 'Roboto',serif !important;
+		                font-weight: 900;
+		                font-stretch:normal;
+		                text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+		                text-rendering: optimizeLegibility !important;
+		                -webkit-font-smoothing: antialiased !important;
+		                letter-spacing: 1px;
+		                text-transform: uppercase;
+						font-size: 16px;
+						line-height: 1.2;
+						color: white;
+						.menu-item-text {
+							color: white; 
+							@extend %transition;
+						}
+						padding: 20px 20px 18px 20px !important;
+						&:hover,
+						&:active,
+						&:focus {
+							background-color: rgba(255,255,255,0.9);
+						}
+					}
+				}
+
+				> li.parent {
+					position: relative;
+
+					.menu-item-text:after {
+						position: absolute;
+						top: 23px;
+						right: 25px;
+						color: white !important;
+						opacity: 1 !important;
+						font-size: 17px !important;
+					}
+
+					> .sub-menu {
+						background: transparent;
+						position: relative;
+						-moz-box-shadow: none;
+	    				-webkit-box-shadow: none;
+	    				box-shadow: none;
+						background-color: transparent;
+						border-top: 1px solid $tealDark;
+
+						> li {
+	    					border: 0px !important;
+							background-color: $tealDark;
+
+							> a {
+				                font-family: 'Roboto',serif !important;
+				                font-weight: 900;
+				                font-stretch:normal;
+				                text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+				                text-rendering: optimizeLegibility !important;
+				                -webkit-font-smoothing: antialiased !important;
+				                letter-spacing: 1px;
+				                text-transform: uppercase;
+								font-size: 14px;
+								color: #d1d3d4;
+								padding-left: 35px !important;
+								border-bottom: 1px solid $tealDark;
+							}
+						}
+
+						> li.parent {
+							.menu-item-text:after {
+								position: absolute;
+								top: 23px;
+								right: 25px;
+								color: white !important;
+								opacity: 1 !important;
+								font-size: 17px !important;
+							}
+
+							> .sub-menu {
+								background: transparent;
+								position: relative;
+								-moz-box-shadow: none;
+			    				-webkit-box-shadow: none;
+			    				box-shadow: none;
+								background-color: transparent;
+
+								> li {
+	    							border: 0px !important;
+									background-color: $tealDark;
+
+									&.parent {
+										.menu-item-text:after {
+											position: absolute;
+											top: 23px;
+											right: 25px;
+											color: white !important;
+											opacity: 1 !important;
+											font-size: 17px !important;
+										}
+									}
+
+									> a {
+						                font-family: 'Roboto',serif !important;
+						                font-weight: 900;
+						                font-stretch:normal;
+						                text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+						                text-rendering: optimizeLegibility !important;
+						                -webkit-font-smoothing: antialiased !important;
+						                letter-spacing: 1px;
+						                text-transform: uppercase;
+										font-size: 14px;
+										color: #d1d3d4;
+										padding-left: 50px !important;
+										border-bottom: 1px solid $tealDark;
+									}
+
+									> .sub-menu {
+										.sub-menu,
+										&.parent:after {
+											display: none !important;
+											visibility: hidden !important;
+											opacity: 0 !important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.view-my-schools-link {
+	          	position: relative;
+	         	&:not(.open-compare-dropdown) #compare-header-wrap {
+	            	opacity: 0;
+	            	display: none;
+	            	visibility: hidden;
+	          	}
+	          	&.open-compare-dropdown #compare-header-wrap {
+	            	opacity: 1;
+	            	display: block;
+	            	visibility: visible;
+	          	}
+	          	> a {
+	              	.menu-item-text {
+	                	display: block;
+	                	vertical-align: top;
+	                	padding: 0px;
+	                	margin: 0px;
+	                	border: 0px;
+	              	}
+	                .compare-count {
+	                    display: inline;
+	                }
+	                .compare-icon-arrow {
+	                	float: right;
+	                    position: relative;
+	                    margin: 3px 0px 0px 0px;
+	                    padding: 0px;
+	                    vertical-align: middle !important;
+	                    display: inline-block;
+	                    height: 16px;
+	                    width: 16px;
+	                    svg {
+	                        margin-top: 4px;
+	                        vertical-align: top;
+	                        path,
+	                        polygon {
+	                            fill: white;
+	                            @extend %transition;
+	                        }
+	                    }
+	                    img {
+	                        margin-top: 4px;
+	                        vertical-align: top;
+	                        width: 100%;
+	                        height: auto;
+	                    }
+	                }
+	              	&:hover,
+	              	&:active,
+	              	&:focus {
+	                	svg {
+	                    	path,
+	                    	polygon {
+	                        	fill: white !important;
+	                    	}
+	                	}
+	              	}
+	          	}
+	          	#school-comparisons {
+	          		border-top: 1px solid $tealDark !important;
+	          		background-color: $tealDark;
+	          	}
+		        .compare-school-link {
+	                font-family: 'Roboto Slab',serif !important;
+	                font-weight: 400;
+	                font-stretch:normal;
+	                text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	                text-rendering: optimizeLegibility !important;
+	                -webkit-font-smoothing: antialiased !important;
+	                color: white !important;
+	                font-size: 14px;
+	                letter-spacing: 0px;
+	                margin: 0px;
+	                text-align: left;
+	                padding: 20px 40px 18px 20px!important;
+	                line-height: 1.2;
+	                height: 57px;
+	                overflow: hidden;
+	                white-space: nowrap;
+	                background-color: $tealDark !important;
+	                text-overflow: ellipsis;
+	                &:not(:first-child) {
+	                    border-top: 1px solid $tealDark;
+	                }
+	                .icon-search-school-name {
+	                	display: none;
+	                	visibility: hidden;
+	                	opacity: 0;
+	                }
+	                .compare-icon-close {
+	                	position: absolute;
+	                	top: 16px;
+	                	right: 15px;
+	                	svg {
+	                		path,
+	                		polygon {
+	                			fill: white;
+	                		}
+	                	}
+	                }
+	                &:hover,
+	                &:focus {
+	                    color: white !important;
+	                    path,
+	                    polygon {
+	                        fill: white !important;
+	                    }
+	                    .icon-search-school-name {
+	                        svg {
+	                          path,
+	                          polygon {
+	                            fill: white !important;
+	                          }
+	                        }
+	                    }
+	                }
+	                &:active {
+	                    color: white !important;
+	                    path,
+	                    polygon {
+	                        fill: white !important;
+	                    }
+	                    .icon-search-school-name {
+	                        svg {
+	                          path,
+	                          polygon {
+	                            fill: white !important;
+	                          }
+	                        }
+	                    }
+	                }
+	            }
+	            .compare-link {
+	                font-family: 'Roboto',serif !important;
+	                font-weight: 900;
+	                font-stretch:normal;
+	                text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	                text-rendering: optimizeLegibility !important;
+	                -webkit-font-smoothing: antialiased !important;
+	                color: white;
+	                letter-spacing: 1px;
+	                text-transform: uppercase;
+	                background-color: white;
+	                padding: 0px;
+	                margin: 0px;
+	                display: block;
+	                width: 100%;
+	                line-height: 1.2;
+	                border-top: 1px solid $tealDark;
+	                &:hover,
+	                &:active,
+	                &:focus {
+
+	                }
+	            }
+	        }
+		}
+	}
+}

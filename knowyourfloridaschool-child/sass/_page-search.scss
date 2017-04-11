@@ -1,0 +1,110 @@
+body.search {
+  #logo,
+  #mobile-logo {
+    svg {
+      .cls-1{fill:#098593;}.cls-2{fill:#64c9d3;}.cls-3{fill:#018e9e;}.cls-4{fill:#08727e;}.cls-5{fill:#00a7b9;}.cls-6{fill:#676767;}.cls-7{fill:#d44336;}.cls-8{fill:#9f3023;}.cls-9{fill:#f15940;}.cls-10{fill:#fff;}.cls-11{fill:#1ab689;}.cls-12{fill:#f5ae27;}
+    }
+  }
+  @media(min-width: 991px) {
+    .results-info-wrap {
+      h2 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  .results-info-wrap {
+    @extend %transition;
+    h2 {
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+    h5 {
+      margin-top: 0px;
+      margin-bottom: 5px;
+    }
+    h6 {
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+  }
+  #wp-admin-bar-search {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+body.search.remove-styles {
+}
+
+body.search:not(.remove-styles)  {
+  #search-filters {
+    > .spb-row-container {
+      background-color: #937EB5;
+      background-image: url(../images/heading-banner-reportcards.png);
+      background-size: cover !important;
+      background-position: center;
+    }
+    .title-wrap {
+      h3.spb-heading.spb-text-heading {
+        font-family: 'Roboto Slab',serif !important;
+        font-weight: 700;
+        font-stretch:normal;
+        text-shadow: 6px 6px 0px rgba(0,0,0,0.05);
+        text-rendering: optimizeLegibility !important;
+        -webkit-font-smoothing: antialiased !important;
+        font-size: 48px;
+        line-height: 1.4;
+        color: white;
+        text-align: center;
+        padding: 0px;
+        margin: 0;
+      }
+    }
+  }
+  .results-info-wrap {
+    h2 {
+      font-family: 'Roboto Slab',serif !important;
+      font-weight: 300;
+      font-stretch:normal;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+      font-size: 32px;
+      color: #00a7b9;
+      line-height: 1.2;
+    }
+    h5 {
+      font-family: 'Roboto',serif !important;
+      font-weight: 500;
+      font-stretch:normal;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #676767;
+      line-height: 1.2;
+    }
+  }
+  .spb_search_widget {
+    .search-form-container {
+      position: relative;
+      .search-form-loading {
+        position: absolute;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        #infscr-loading {
+          height: 70px;
+          line-height: 70px;
+          .spinner > div {
+            background: white;
+          }
+        }
+      }
+    }
+  }
+}

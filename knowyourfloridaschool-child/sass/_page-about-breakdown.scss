@@ -1,0 +1,93 @@
+body {
+
+}
+
+body.remove-styles {
+  
+}
+
+body:not(.remove-styles)  {
+	&.page-id-90 {
+		#school-grade-calculation-examples {
+			h3.spb-heading.spb-text-heading {
+				text-align: center;
+			}
+		}
+		#school-grade-components {
+			.title-wrap {
+				h3.spb-heading.spb-text-heading {
+					color: white;
+					text-align: center;
+				}
+			}
+			.spb_content_element.spb_text_column {
+				&.component-achievement,
+				&.component-learning-gains,
+				&.component-learning-gains-low25,
+				&.component-middle-acceleration,
+				&.component-high-acceleration,
+				&.component-grad-rate {
+					.spb-asset-content  {
+						padding-left: 70px !important;
+						padding-right: 0px !important;
+						max-width: 419px;
+						margin: 0 auto;
+						display: block;
+						position: relative;
+						h5 {
+							@extend %robotoMedium;
+							font-size: 14px;
+							text-transform: none;
+							color: #00616d;
+							margin-bottom: 5px;
+						}
+						h3 {
+							color: white;
+							margin-bottom: 2px;
+							position: relative;
+							.icon-component {
+								position: absolute;
+								top: 0px;
+								left: -60px;
+								height: 40px;
+								width: 40px;
+								svg {
+									.cls-1,.cls-2{fill:#ffffff;}.cls-1{opacity:0.4;}
+								}
+							}
+						}
+						h4 {
+							@extend %robotoSlabBold;
+							font-size: 16px;
+							color: #91c7d3;
+							margin-bottom: 15px;
+						}
+						p {
+							margin-top: 15px;
+							color: white;
+							line-height: 1.5;
+						}
+					}
+				}
+			}
+		}
+		#FLDOE-read-more {
+			.spb_content_element.spb_text_column {
+				margin-bottom: 0;
+				p:last-child {
+					@media (max-width: 767px) {
+						text-align: center !important;
+					}
+					margin-top: 7px;
+					margin-bottom: 0;
+				}
+			}
+			.spb_button_element.align-left {
+				@media (max-width: 767px) {
+					text-align: center !important;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}

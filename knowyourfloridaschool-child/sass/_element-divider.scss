@@ -1,0 +1,17 @@
+body {
+	.divider-wrap {
+		.spb_divider {
+			border-width: 1px;
+			border-color: #eeeeee;
+			position: relative;
+			.hr-bars-icon {
+				position: absolute;
+				top: -29px;
+				left: 50%;
+				margin-left: -29px;
+				height: 58px;
+				width: 58px;
+			}
+		}
+	}
+}

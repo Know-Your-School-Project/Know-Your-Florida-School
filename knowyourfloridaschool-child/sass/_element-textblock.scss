@@ -1,0 +1,198 @@
+body:not(.remove-styles) {
+	&.single .page-content,
+	.spb_content_element.spb_text_column,
+	.spb_content_element.spb_raw_html,
+	.spb_content_element.spb_calc_examples,
+	#modal-container .sd-modal-content .page-content {
+		h1 {
+			font-family: 'Roboto Slab',serif !important;
+  			font-weight: 700;
+  			font-stretch:normal;
+  			text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  			text-rendering: optimizeLegibility !important;
+  			-webkit-font-smoothing: antialiased !important;
+			@media(min-width: 991px) {
+				font-size: 42px;
+			} 
+			@media(max-width: 991px) AND (min-width: 767px) {
+				font-size: 42px;
+			}
+			@media(max-width: 767px) {
+				font-size: 32px;
+			}
+			line-height: 1.2;
+			color: #00a7b9;
+			padding: 0px;
+			margin: 0 0 35px 0;
+		}
+		h2 {
+			font-family: 'Roboto Slab',serif !important;
+  			font-weight: 300;
+  			font-stretch:normal;
+  			text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  			text-rendering: optimizeLegibility !important;
+  			-webkit-font-smoothing: antialiased !important;
+			font-size: 32px;
+			line-height: 1.4;
+			color: #676767;
+			padding: 0px;
+			margin: 0 0 25px 0;
+		}
+		h3 {
+			font-family: 'Roboto Slab',serif !important;
+  			font-weight: 700;
+  			font-stretch:normal;
+  			text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  			text-rendering: optimizeLegibility !important;
+  			-webkit-font-smoothing: antialiased !important;
+			font-size: 24px;
+			line-height: 1.4;
+			color: #676767;
+			text-align: left;
+			padding: 0px;
+			margin: 0 0 25px 0;
+		}
+		h4 {
+			@extend %robotoMedium;
+			font-size: 18px;
+			line-height: 1.4;
+			color: #676767;
+			padding: 0px;
+			margin: 0 0 25px 0;
+		}
+		h5 {
+			@extend %robotoRegular;
+			font-size: 14px;
+			line-height: 1.2;
+			letter-spacing: 0.2px;
+			text-transform: uppercase;
+			color: #676767;
+			padding: 0px;
+			margin: 0 0 25px 0;
+		}
+		h6 {
+			@extend %robotoBold;
+			font-size: 14px;
+			line-height: 1.2;
+			letter-spacing: 0.1px;
+			text-transform: none;
+			color: #676767;
+			padding: 0px;
+			margin: 0 0 2px 0;
+		}
+		blockquote {
+			font-style: normal;
+			@media(min-width: 991px) {
+				margin: 30px 0px 40px 40px;
+			}
+			@media(max-width: 991px) {
+				margin: 30px 0px 40px 0px;
+			}
+			p {
+				@extend %openSansLight;
+				font-size: 26px;
+				line-height: 1.54;
+				color: $greenDark;
+				padding: 0px;
+				margin: 0px;
+				position: relative;
+				font-style: normal;
+				&:before {
+					content: '“';
+					position: absolute;
+					top: 0px;
+					left: -10px;
+				}
+				&:after {
+					content: '”';
+				}
+			}
+		}
+		p {
+			@extend %robotoSlabLight;
+			font-size: 17px;
+			line-height: 1.76;
+			color: #676767;
+			padding: 0px;
+			margin: 0 0 30px 0;
+		}
+		hr {
+			margin-top: 40px;
+			margin-bottom: 40px;
+			border-top: 1.5px solid #E6E6E5;
+		}
+		a {
+  			font-family: 'Roboto Slab',serif !important;
+  			font-weight: 700;
+  			font-stretch:normal;
+  			text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  			text-rendering: optimizeLegibility !important;
+  			-webkit-font-smoothing: antialiased !important;
+			color: $violet;
+			&:hover,
+			&:active,
+			&:focus {
+				color: $purpleDark;
+			}
+		}
+		ul, ol {
+			@media(min-width: 767px) {
+				padding-left: 30px;
+			}
+			@media(max-width: 767px) {
+				padding-left: 15px;
+			}
+			margin: 0 0 30px;
+			li {
+				@extend %robotoSlabLight;
+				font-size: 17px;
+				line-height: 1.76;
+				color: #676767;
+				padding: 0px;
+				position: relative;
+				ul, ol {
+					margin-top: 25px;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		ul {
+			list-style: none;
+			> li {
+				margin: 0 0 5px 0 !important;
+				&:before {
+					content: "•";
+					position: absolute;
+					top: -1px;
+					left: -11px;
+				}
+			}
+		}
+		ol {
+			> li {
+				margin: 0 0 25px 0 !important;
+			}
+		}
+		iframe {
+			width: 100% !important;
+		}
+	}
+	.title-wrap {
+		padding: 0px;
+		margin: 0px;
+		h3.spb-heading.spb-text-heading {
+			font-family: 'Roboto Slab',serif !important;
+			font-weight: 300;
+			font-stretch:normal;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+			text-rendering: optimizeLegibility !important;
+			-webkit-font-smoothing: antialiased !important;
+			font-size: 32px;
+			line-height: 1.4;
+			color: #00A7B9;
+			text-align: left;
+			padding: 0px;
+			margin: 0 0 25px 0;
+		}
+	}
+}

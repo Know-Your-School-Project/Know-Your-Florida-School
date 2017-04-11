@@ -1,0 +1,166 @@
+body {
+
+}
+
+body.remove-styles {
+  
+}
+
+body:not(.remove-styles)  {
+	&.page-id-49 {
+		#grade-calc {
+			.spb-row-container {
+				@media (max-width: 767px) {
+					padding-bottom: 50px !important;
+				}
+				@media (min-width: 767px) {
+
+				}
+				padding-top: 50px !important;
+				padding-bottom: 20px !important;
+			}
+			.spb-column-container {
+				padding-left: 0px;
+				padding-right: 10px;
+				.row {
+					padding: 0px;
+					h3 {
+						margin: 15px 0 8px;
+						@media (max-width: 767px) {
+							text-align: center;
+						}
+					}
+					h6 {
+						line-height: 1.76;
+					}
+				}
+			}
+			.spb_button_element {
+				@media (max-width: 767px) {
+					text-align: center !important;
+				}
+				.sf-button {
+					margin-top: 20px;
+					margin-bottom: 20px;
+					@media (max-width: 767px) {
+						margin-left: auto;
+						margin-right: auto;
+						float: none;
+					}
+				}
+			}
+			img {
+				@media (max-width: 767px) {
+					display: none;
+				}
+				margin-top: -40px;
+				margin-bottom: -65px;
+			}
+			.spb_image {
+				margin: 0px;
+			}
+		}
+		.spb_issue_briefs {
+			@media (min-width: 768px) {
+				padding-left: 50px;
+				padding-top: 70px;
+			}
+			.title-wrap {
+				margin-bottom: 10px;
+				h3.spb-heading {
+					@extend %robotoSlabBold;
+					text-align: left;
+					color: $greenDark;
+					font-size: 20px;
+					line-height: 1.6;
+				}
+			}
+			.dropdown-container {
+				@media (min-width: 768px) {
+					max-width: 300px;
+				}
+				position: relative;
+				height: 40px;
+				select#brief_select {
+					@extend %robotoBold;
+					color: $violet;
+					font-size: 16px;
+					line-height: 1.2;
+				    display: block;
+				    height: 40px;
+				    line-height: 40px;
+				    margin: 0;
+				    background-color: #fff!important;
+				    background-image: none!important;
+				    border: 1px solid #e6e6e5;
+				    text-overflow: ellipsis;
+				    padding: 0 55px 0 15px;
+				    -webkit-border-radius: 3px;
+				    -moz-border-radius: 3px;
+				    border-radius: 3px;
+					width: 100%;
+			        &::-ms-expand {
+			            display: none;
+			        }
+			        &:focus {
+					    outline:none;
+					}
+				}
+				.icon-select {
+					position: absolute;
+				    top: 0;
+				    right: 0;
+				    height: 40px;
+				    width: 40px;
+	    			border: 1px solid #e6e6e5;
+					pointer-events: none;
+					background-color: white;
+					background-image: url(../images/icon-dropdown-arrows@2x.png);
+					background-size: 11px 17px;
+					background-position: center;
+					background-repeat: no-repeat;
+					-webkit-border-top-right-radius: 3px;
+					-webkit-border-bottom-right-radius: 3px;
+					-moz-border-radius-topright: 3px;
+					-moz-border-radius-bottomright: 3px;
+					border-top-right-radius: 3px;
+					border-bottom-right-radius: 3px;
+				}
+			}
+			p {
+				@extend %robotoSlabLight;
+				padding: 15px 0px 30px;
+				font-size: 14px;
+				line-height: 1.65;
+				color: #676767;
+			}
+			.spb_button_element {
+				text-align: left;
+				padding: 0;
+				a {
+					text-align: center;
+					padding: 0 20px;
+				}
+			}
+		}
+		.white-text.spb_text_column {
+			margin-bottom: 0px;
+			h3 {
+				font-size: 23px;
+			}
+			h6 {
+				@media (max-width: 767px) {
+					text-align: center;
+					padding-bottom: 15px;
+				}
+				font-size: 15px;
+				line-height: 1.3;
+			}
+		}
+		#center-heading {
+			.spb_content_element.spb_text_column .title-wrap h3.spb-heading.spb-text-heading {
+				text-align: center;
+			}
+		}
+	}
+}

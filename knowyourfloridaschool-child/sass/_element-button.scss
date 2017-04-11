@@ -1,0 +1,60 @@
+body:not(.remove-styles) {
+	.spb_button_element,
+	.textwidget {
+		.sf-button {
+  			font-family: 'Roboto',serif !important;
+  			font-weight: 900;
+  			font-stretch:normal;
+ 	 		text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  			text-rendering: optimizeLegibility !important;
+  			-webkit-font-smoothing: antialiased !important;
+			font-size: 12px;
+			line-height: 45px;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			height: 45px;
+			padding: 0 30px;
+			min-width: 150px;
+			margin: 0px;
+			position: relative;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			text-align: center;
+			&.purple,
+			&.grey {
+				color: #fff !important;
+				background-color: $violet;
+				&:hover,
+				&:active,
+				&:focus {
+					background-color: $purpleDark;
+				}
+			}
+			&.aqua {
+				color: #fff !important;
+				background-color: #64C9D3;
+				&:hover,
+				&:active,
+				&:focus {
+
+				}
+			}
+			&.white-green {
+				color: $green !important;
+				background-color: #fff;
+				&:hover,
+				&:active,
+				&:focus {
+
+				}
+			}
+			&.white-purple {
+				color: $violet !important;
+				background-color: #fff;
+			}
+		}
+	}
+}
