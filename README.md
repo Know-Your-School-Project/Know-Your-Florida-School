@@ -7,7 +7,7 @@
 
   <p align="center">
     The Know Your School online report card tool is a prototype of a reimagined, transparent, online school report card for states. It is intentionally designed as a base for a state, with the capability of expansion over time. The Know Your School tool was built using open-source front-end code that is accessible free of charge as a resource for other developers. Implementation of the code will require modification for new data sources.
-    <br>
+    <br><br>
     The primary, publicly accessible-implementation of this project resides at <a href="https://knowyourfloridaschool.org/">KnowYourFloridaSchool.org</a>.
   </p>
 </p>
@@ -163,9 +163,7 @@ Code and documentation copyright 2015-2017 Social Driver and/or Collaborative Co
 
 **Overview**
 
-In recognition of the limitations of current state public school accountability reports, the Foundation for Excellence in Education (ExcelinEd) sponsored the My School Information Design Challenge in December 2014 to reimagine the public reporting of school accountability data. Following that competition, ExcelinEd brought the design challenge to life with the winners, Collaborative
-
-Communications and Social Driver, as well as community data partner Jacksonville Public Education Fund (JaxPEF).
+In recognition of the limitations of current state public school accountability reports, the Foundation for Excellence in Education (ExcelinEd) sponsored the My School Information Design Challenge in December 2014 to reimagine the public reporting of school accountability data. Following that competition, ExcelinEd brought the design challenge to life with the winners, Collaborative Communications and Social Driver, as well as community data partner Jacksonville Public Education Fund (JaxPEF).
  
 These partners developed and launched Know Your Florida School, an exemplar online school report card tool featuring data from the state of Florida. Know Your Florida School’s engaging, mobile-friendly interface puts information about local schools—from student performance to the details of Florida’s school grades—into context to help parents access and use the data.
  
