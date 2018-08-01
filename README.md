@@ -7,8 +7,6 @@
 
   <p align="center">
     The Know Your School online report card tool is a prototype of a reimagined, transparent, online school report card for states. It is intentionally designed as a base for a state, with the capability of expansion over time. The Know Your School tool was built using open-source front-end code that is accessible free of charge as a resource for other developers. Implementation of the code will require modification for new data sources.
-    <br><br>
-    The primary, publicly accessible-implementation of this project resides at <a href="https://knowyourfloridaschool.org/">KnowYourFloridaSchool.org</a>.
   </p>
 </p>
 
