@@ -173,4 +173,4 @@ The My School Information Design Challenge built upon research from the Educatio
 
 **More Information**
 
-This guide is for developers. To learn more about the project’s impact, download the issue brief series and access resources for SEAs, visit https://knowyourfloridaschool.org/about/.
+This guide is for developers. To learn more about the project’s impact, download the issue brief series and access resources for SEAs, visit https://www.excelined.org/quality/school-report-cards/.
